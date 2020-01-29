@@ -29,7 +29,7 @@ io.on('connection', function(socket) { // socket is our connection
 
         // tell the connection manager (io) to send this message to everyone
         // anyone connected to our chat app will ge tthis message (including sender)
-        io.emit('new_message', { id: socket.id, message: msg})
+        io.emit('new_message', { id: socket.id, message: msg })
     })
 
     socket.on('disconnect', function() {
