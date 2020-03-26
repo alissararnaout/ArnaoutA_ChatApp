@@ -7,7 +7,7 @@ const socket = io(); // instantiate library on the client side
 // from the server
 
 // this is data destructuring - look it up
-function setUserId(sID) {
+function setUserId({sID}) {
     // debugger;
     console.log(sID);
     vm.socketID = sID;
