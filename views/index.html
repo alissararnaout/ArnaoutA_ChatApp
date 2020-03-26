@@ -16,7 +16,11 @@
 
 			<form>
 				<label for="message">Something to say?</label>
+<<<<<<< HEAD
 				<textarea v-model="message" type="text" autocomplete="off" id="textarea"></textarea>
+=======
+				<textarea v-model="message" class="message" type="text" autocomplete="off" id="textarea"></textarea>
+>>>>>>> f6ea257ebe955782b562494e9b4daaf83fa29820
 				<input @click.prevent="dispatchMessage" type="submit">
 			</form>
 		</section>
@@ -25,6 +29,10 @@
 			<ul id="messages">
 				<!-- render a new message component for every message -->
 				<newmessage v-for="message in messages" :msg="message"></newmessage>
+<<<<<<< HEAD
+=======
+				
+>>>>>>> f6ea257ebe955782b562494e9b4daaf83fa29820
 			</ul>
 		</section>
 	</main>
